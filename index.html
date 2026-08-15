@@ -34,9 +34,9 @@
             position: relative;
             width: 100%;
             min-height: 70vh;
-            /* ใช้รูปแรกเป็นแบนเนอร์ปกเว็บ */
+            /* รูปปกเว็บ (ฝังโค้ด Base64) */
             background: linear-gradient(180deg, rgba(10,10,12,0.4) 0%, rgba(10,10,12,0.95) 100%),
-                        url('Gemini_Generated_Image_imdt4gimdt4gimdt.jfif') center/cover no-repeat;
+                        url('data:image/jpeg;base64,...') center/cover no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
@@ -222,7 +222,7 @@
 <body>
 
     <!-- Hero Banner Section -->
-    <header class="hero">
+    <header class="hero" style="background: linear-gradient(180deg, rgba(10,10,12,0.4) 0%, rgba(10,10,12,0.95) 100%), url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD...');">
         <h1>Lanna Eats</h1>
         <p>MODERN UNDERWORLD CUISINE</p>
     </header>
@@ -233,7 +233,7 @@
         <p>ยกระดับอาหารเหนือสูตรต้นตำรับ ด้วยบรรยากาศโมเดิร์นดาร์กสุดหรู คัดสรรวัตถุดิบชั้นดี เข้มข้น นุ่มร่อน ถึงเครื่องทุกชาม สัมผัสความอร่อยที่คุณจะต้องยอมจำนน!</p>
     </section>
 
-    <!-- Menu Section (Top 3 Selling Items) -->
+    <!-- Menu Section -->
     <main class="menu-container">
         <h2 class="section-title">🔥 3 เมนูซิกเนเจอร์ 🔥</h2>
         
@@ -242,8 +242,8 @@
             <!-- เมนูที่ 1: ข้าวซอยไก่ -->
             <article class="menu-card">
                 <span class="badge">Best Seller (193 ชาม)</span>
-                <!-- รูปที่ 2: ข้าวซอยไก่ -->
-                <img src="Gemini_Generated_Image_imdt4gimdt4gimdt (1).jfif" alt="ข้าวซอยไก่ไฟนรก">
+                <!-- รูปข้าวซอยไก่ -->
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="ข้าวซอยไก่ไฟนรก">
                 <div class="menu-content">
                     <h3 class="menu-title">ข้าวซอยไก่ไฟนรก</h3>
                     <p class="menu-desc">น่องไก่ชิ้นโตเคี่ยวจนนุ่มร่อน ในน้ำแกงข้าวซอยกะทิสดเข้มข้นสูตรเฉพาะ เสิร์ฟพร้อมเส้นกรอบ หอมแดง และผักกาดดอง</p>
@@ -257,8 +257,8 @@
             <!-- เมนูที่ 2: แคบหมู -->
             <article class="menu-card">
                 <span class="badge">Must Try (188 จาน)</span>
-                <!-- รูปที่ 3: แคบหมู -->
-                <img src="Gemini_Generated_Image_imdt4gimdt4gimdt (2).jfif" alt="แคบหมูสะท้านโลกันตร์">
+                <!-- รูปแคบหมู -->
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQE..." alt="แคบหมูสะท้านโลกันตร์">
                 <div class="menu-content">
                     <h3 class="menu-title">แคบหมูสะท้านโลกันตร์</h3>
                     <p class="menu-desc">แคบหมูทอดกรอบไร้น้ำมัน ไม่อมน้ำมัน กรอบสนั่นทานคู่กับข้าวซอยเข้ากันอย่างลงตัว</p>
@@ -272,8 +272,8 @@
             <!-- เมนูที่ 3: ข้าวซอยเจ -->
             <article class="menu-card">
                 <span class="badge">Vegan Choice (184 ชาม)</span>
-                <!-- รูปที่ 4: ข้าวซอยเจ -->
-                <img src="ChatGPT Image 15 ส.ค. 2569 14_09_32.png" alt="ข้าวซอยเจโปรตีนวิญญาณ">
+                <!-- รูปข้าวซอยเจ -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANS..." alt="ข้าวซอยเจโปรตีนวิญญาณ">
                 <div class="menu-content">
                     <h3 class="menu-title">ข้าวซอยเจโปรตีนวิญญาณ</h3>
                     <p class="menu-desc">ข้าวซอยสูตรเจไร้เนื้อสัตว์ รสชาติเข้มข้นจัดจ้านไม่แพ้สูตรปกติ ใช้โปรตีนและเห็ดหอมเคี่ยวพิเศษ</p>
@@ -293,7 +293,7 @@
         <p style="font-size: 0.85rem; margin-top: 5px; margin-bottom: 15px;">เปิดบริการทุกวัน | โทรสำรองที่นั่ง: 02-666-6666</p>
         
         <!-- ช่องทางติดต่อ Line -->
-        <a href="#" class="line-contact">💬 Line: @LannaEats</a>
+        <a href="https://line.me/R/ti/p/@LannaEats" target="_blank" class="line-contact">💬 Line: @LannaEats</a>
     </footer>
 
 </body>
